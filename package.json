@@ -1,0 +1,14 @@
+{
+  "name": "trading_app",
+  "version": "1.0.0",
+  "description": "Scalable real-time market dashboard for stocks, metals, crypto, and currencies.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "express": "^4.21.2"
+  }
+}
