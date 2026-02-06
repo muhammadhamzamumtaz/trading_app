@@ -1,0 +1,135 @@
+:root {
+  --bg: #050816;
+  --card: #0f172a;
+  --card-soft: #131c34;
+  --text: #e2e8f0;
+  --muted: #9aa8c7;
+  --green: #22c55e;
+  --red: #ef4444;
+  --accent: #38bdf8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at top right, #16213f 0%, #050816 60%);
+  min-height: 100vh;
+}
+
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.pill {
+  display: inline-block;
+  background: rgba(56, 189, 248, 0.2);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  border-radius: 999px;
+  padding: 0.3rem 0.8rem;
+  color: var(--accent);
+  font-size: 0.85rem;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.panel {
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  border-radius: 16px;
+  padding: 1rem;
+  backdrop-filter: blur(6px);
+}
+
+.panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+label {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+select {
+  margin-left: 0.5rem;
+  background: var(--card-soft);
+  color: var(--text);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 8px;
+  padding: 0.35rem 0.6rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.8rem;
+}
+
+.card {
+  background: var(--card-soft);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 12px;
+  padding: 0.9rem;
+}
+
+.card h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1rem;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.price-list {
+  margin: 0.5rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.price-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem 0;
+}
+
+.change-positive {
+  color: var(--green);
+}
+
+.change-negative {
+  color: var(--red);
+}
+
+@media (max-width: 760px) {
+  .hero {
+    flex-direction: column;
+  }
+}

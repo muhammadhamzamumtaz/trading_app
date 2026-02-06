@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Trading Intelligence</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header class="hero">
+      <div>
+        <p class="pill">Real-time intelligence</p>
+        <h1>Global Trading Dashboard</h1>
+        <p>
+          Track stocks, metals, crypto, and currencies with live updates and value conversion in USD, EUR, and PKR.
+        </p>
+      </div>
+      <div class="hero-meta">
+        <p>Auto refresh: every 30 seconds</p>
+        <p id="last-updated">Last updated: --</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="panel">
+        <h2>Currency Conversion Rates</h2>
+        <div id="conversion-grid" class="card-grid"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Asset Categories</h2>
+          <label>
+            Chart asset
+            <select id="asset-selector"></select>
+          </label>
+        </div>
+        <canvas id="market-chart" height="90"></canvas>
+      </section>
+
+      <section class="panel">
+        <h2>Stocks</h2>
+        <div id="stocks" class="card-grid"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Metals (Gold & Silver)</h2>
+        <div id="metals" class="card-grid"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Crypto Coins</h2>
+        <div id="crypto" class="card-grid"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Forex</h2>
+        <div id="forex" class="card-grid"></div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
